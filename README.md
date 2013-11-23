@@ -1,4 +1,4 @@
-2WebDevs.com
+2webdevs.com
 ============
 
-Um blog-post sobre front-end, web development, web standards, HTML5, CSS3, JavaScript e afins.
+Um blog-post sobre front-end development, web standards, HTML5, CSS3, JavaScript e afins.
