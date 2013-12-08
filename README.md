@@ -1,4 +1,4 @@
-4webdevs.com
+css3 experiments
 ============
 
-Um blog-post sobre front-end development, web standards, HTML5, CSS3, JavaScript e afins.
+My experiments with CSS3 on 2013.
