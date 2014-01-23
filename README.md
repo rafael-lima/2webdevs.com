@@ -1,6 +1,6 @@
 # CSS3 Experiments
 
-My experiments with CSS3 on 2013.
+My experiments with CSS3 on 2013 and 2014.
 
 ## Experiments
 * [Compass](compass/)
@@ -12,7 +12,7 @@ My experiments with CSS3 on 2013.
 
 The MIT License (MIT)
 
-Copyright (c) 2013 Rafael Lima
+Copyright (c) 2014 Rafael Lima
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
