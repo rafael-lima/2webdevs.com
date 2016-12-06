@@ -3,13 +3,11 @@
 	<head>
 		<title>Icons with pure CSS3</title>
 
-		<!-- Meta -->
 		<meta charset="utf-8" />
 		<meta name="title" content="Icons with pure CSS3" />
 		<meta name="author" content="Rafael Lima" />
 		<meta name="description" content="A experiment with pure CSS3, icons, no images." />
 
-		<!-- StyleSheet -->
 		<style>
 
 			* {
@@ -17,7 +15,7 @@
 			  padding:0;
 			  border:0;
 			}
-			
+
 			.tooltip {
 			  position:absolute;
 			  z-index:2;
@@ -33,11 +31,11 @@
 			  margin-right:-50px;
 			  transition:all 0.7s ease-in-out;
 			}
-			
+
 			.tooltip:before {
 			  content: "Created by Rafael Lima";
 			}
-			
+
 			.tooltip:after {
 			  content:"";
 			  position: absolute;
@@ -47,7 +45,7 @@
 			  border:10px solid transparent;
 			  border-bottom-color:#69C;
 			}
-			
+
 			.container {
 			  width:100%;
 			  height:100%;
@@ -56,77 +54,65 @@
 			  z-index:-1;
 			  background: radial-gradient(ellipse at center, #ECECFB 40%, #DBDBEA 70%);
 			  box-shadow: inset 0 0 80px 60px rgba(250, 250, 250, 0.6);
-			  -webkit-animation: fadeIn 1.2s ease-in-out;
+			  animation: fadeIn 1.2s ease-in-out;
 			}
-			
+
 			.icon {
 			  position: absolute;
 			  margin-top:-170px;
 			  margin-left:-130px;
-			  background-image: -webkit-linear-gradient(#D6D6D6 -5%, #DBDBDB 20%, #ECECFB 50%, #DBDBDB 80%, #D6D6D6 105%);
-			  background-image: -moz-linear-gradient(#D6D6D6 -5%, #DBDBDB 20%, #ECECFB 50%, #DBDBDB 80%, #D6D6D6 105%);
-			  background-image: -o-linear-gradient(#D6D6D6 -5%, #DBDBDB 20%, #ECECFB 50%, #DBDBDB 80%, #D6D6D6 105%);
-			  background-image: -ms-linear-gradient(#D6D6D6 -5%, #DBDBDB 20%, #ECECFB 50%, #DBDBDB 80%, #D6D6D6 105%);
-			  background-image: -linear-gradient(#D6D6D6 -5%, #DBDBDB 20%, #ECECFB 50%, #DBDBDB 80%, #D6D6D6 105%);
+			  background-image: linear-gradient(#D6D6D6 -5%, #DBDBDB 20%, #ECECFB 50%, #DBDBDB 80%, #D6D6D6 105%);
 			  border-radius:12px;
 			  border-top-right-radius:60px;
 			  border:2px solid rgba(204, 204, 204, 0.7);
 			  box-shadow: inset 0 0 16px 10px #DDD;
 			}
-			
+
 			/* ---------- Icones ---------- */
-			
+
 			#icon-1 {
 			  width:260px;
 			  height:340px;
 			  top:50%; left:50%;
 			  z-index:1;
 			  transition:all 0.7s ease-in-out;
-			  -webkit-animation: slideLeftBig 2.6s ease-in-out;
+			  animation: slideLeftBig 2.6s ease-in-out;
 			}
-			
+
 			#icon-1:hover .tooltip {
 			  opacity:1;
 			  margin-right:-20px;
 			  transition:all 0.7s ease-in-out;
 			}
-			
+
 			#icon-2 {
 			  width:240px;
 			  height:320px;
 			  top:48%; left:55.8%;
 			  z-index: 0;
-			  -webkit-transform: rotate(8deg);
-			  -moz-transform: rotate(8deg);
-			  -ms-transform: rotate(8deg);
-			  -o-transform: rotate(8deg);
 			  transform: rotate(8deg);
-			  -webkit-animation: slideRightBig 2.4s ease-in-out;
+			  animation: slideRightBig 2.4s ease-in-out;
 			}
-			
+
 			/* ---------- Dobra ---------- */
-			
+
 			.icon:before {
 			  content:"";
 			  width:34%;
 			  height:27%;
 			  position: absolute;
 			  top:0; right:0;
-			  background-image: -webkit-linear-gradient(45deg, #D6D6D6 -5%, #DBDBDB 20%, #ECECFB 60%, #DBDBDB 80%, #D6D6D6 105%);
-			  background-image: -moz-linear-gradient(45deg, #D6D6D6 -5%, #DBDBDB 20%, #ECECFB 60%, #DBDBDB 80%, #D6D6D6 105%);
-			  background-image: -ms-linear-gradient(45deg, #D6D6D6 -5%, #DBDBDB 20%, #ECECFB 60%, #DBDBDB 80%, #D6D6D6 105%);
-			  background-image: -o-linear-gradient(45deg, #D6D6D6 -5%, #DBDBDB 20%, #ECECFB 60%, #DBDBDB 80%, #D6D6D6 105%);
-			  background-image: -linear-gradient(45deg, #D6D6D6 -5%, #DBDBDB 20%, #ECECFB 60%, #DBDBDB 80%, #D6D6D6 105%);
+			  background-image: linear-gradient(45deg, #D6D6D6 -5%, #DBDBDB 20%, #ECECFB 60%, #DBDBDB 80%, #D6D6D6 105%);
 			  border-top-right-radius:60px;
 			  border-bottom-left-radius:6px;
 			  border-left:2px solid rgba(204, 204, 204, 0.7);
 			  border-bottom:2px solid rgba(204, 204, 204, 0.7);
 			  transition:all 0.7s ease-in-out;
-			  -webkit-animation: coolEffect 5s ease-in 3s infinite alternate none;
+			  animation: coolEffect 5s ease-in 3s infinite alternate none;
 			}
-			
+
 			/* ---------- Pautas ---------- */
-			
+
 			.icon:after {
 			  content:"";
 			  width:65%;
@@ -134,15 +120,11 @@
 			  position: absolute;
 			  top:48%; left:50%;
 			  margin-left:-32.25%;
-			  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ccc), color-stop(0.2, #ccc), color-stop(0.2, #fff), color-stop(0.4, #fff), color-stop(0.4, #ccc), color-stop(0.6, #ccc), color-stop(0.6, #fff), color-stop(0.8, #fff), color-stop(0.8, #ccc), to(#ccc));
-			  background-image: -webkit-linear-gradient(#ccc 0%, #ccc 20%, #fff 20%, #fff 40%, #ccc 40%, #ccc 60%, #fff 60%, #fff 80%, #ccc 80%, #ccc 100%);
-			  background-image: -moz-linear-gradient(#ccc 0%, #ccc 20%, #DBDBDB 20%, #DBDBDB 40%, #ccc 40%, #ccc 60%, #DBDBDB 60%, #DBDBDB 80%, #ccc 80%, #ccc 100%);
-			  background-image: -o-linear-gradient(#ccc 0%, #ccc 20%, #DBDBDB 20%, #DBDBDB 40%, #ccc 40%, #ccc 60%, #DBDBDB 60%, #DBDBDB 80%, #ccc 80%, #ccc 100%);
 			  background-image: linear-gradient(#ccc 0%, #ccc 20%, #ECECFB 20%, #ECECFB 40%, #ccc 40%, #ccc 60%, #ECECFB 60%, #ECECFB 80%, #ccc 80%, #ccc 100%);
 			  border-radius:2px;
 			  opacity:0.7;
 			}
-			
+
 			.author {
 			  position: absolute;
 			  left: 42%;
@@ -151,13 +133,13 @@
 			  font: 1.4em 'Raleway', sans-serif;
 			  font-weight: 500;
 			}
-			
+
 			@keyframes fadeIn {
 			  0%,40% { opacity: 0; }
 			  60, 80% { opacity: 0.4; }
-			  100% { opacity: 1; }  
+			  100% { opacity: 1; }
 			}
-			
+
 			@keyframes slideLeftBig {
 			  0% {
 			    transform: translateX(-600px);
@@ -169,13 +151,13 @@
 			    transform: translateX(-70px);
 			  }
 			  92% {
-			    transform: translateX(0); 
+			    transform: translateX(0);
 			  }
 			  100% {
 			    transform: translateX(0);
 			  }
 			}
-			
+
 			@keyframes slideRightBig {
 			  0% {
 			    transform: translateX(600px) rotate(2deg);
@@ -190,25 +172,23 @@
 			    transform: translateX(0) rotate(8deg);
 			  }
 			}
-			
+
 			@keyframes coolEffect {
 			  0% {
 			    width: 34%;
-			    height: 27%; 
+			    height: 27%;
 			  }
 			  50% {
 			    width: 28%;
-			    height: 20%; 
+			    height: 20%;
 			  }
 			  100% {
 			    width: 34%;
-			    height: 27%; 
+			    height: 27%;
 			  }
 			}
-
 		</style>
 	</head>
-
 	<body>
 		<div class="container">
 			<div class="icon" id="icon-1">
