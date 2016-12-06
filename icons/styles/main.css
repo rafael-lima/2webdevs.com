@@ -1,0 +1,177 @@
+* {
+  margin:0;
+  padding:0;
+  border:0;
+}
+
+.tooltip {
+  position:absolute;
+  z-index:2;
+  top: 74%;
+  padding:10px 26px;
+  background-color:#69C;
+  color:#DDD;
+  font:20px "Raleway", sans-serif;
+  border-radius:4px;
+  text-decoration: none;
+  box-shadow: 1px 1px 2px 1.5px #CCC;
+  opacity:0;
+  margin-right:-50px;
+  transition:all 0.7s ease-in-out;
+}
+
+.tooltip:before {
+  content: "Created by Rafael Lima";
+}
+
+.tooltip:after {
+  content:"";
+  position: absolute;
+  top:-18px;
+  left: 50%;
+  margin-left: -20px;
+  border:10px solid transparent;
+  border-bottom-color:#69C;
+}
+
+.container {
+  width:100%;
+  height:100%;
+  position: absolute;
+  overflow: hidden;
+  z-index:-1;
+  background: radial-gradient(ellipse at center, #ECECFB 40%, #DBDBEA 70%);
+  box-shadow: inset 0 0 80px 60px rgba(250, 250, 250, 0.6);
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.icon {
+  position: absolute;
+  margin-top:-170px;
+  margin-left:-130px;
+  background-image: linear-gradient(#D6D6D6 -5%, #DBDBDB 20%, #ECECFB 50%, #DBDBDB 80%, #D6D6D6 105%);
+  border-radius:12px;
+  border-top-right-radius:60px;
+  border:2px solid rgba(204, 204, 204, 0.7);
+  box-shadow: inset 0 0 16px 10px #DDD;
+}
+
+/* ---------- Icones ---------- */
+
+#icon-1 {
+  width:260px;
+  height:340px;
+  top:50%; left:50%;
+  z-index:1;
+  transition:all 0.7s ease-in-out;
+  animation: slideLeftBig 2.6s ease-in-out;
+}
+
+#icon-1:hover .tooltip {
+  opacity:1;
+  margin-right:-20px;
+  transition:all 0.7s ease-in-out;
+}
+
+#icon-2 {
+  width:240px;
+  height:320px;
+  top:48%; left:55.8%;
+  z-index: 0;
+  transform: rotate(8deg);
+  animation: slideRightBig 2.4s ease-in-out;
+}
+
+/* ---------- Dobra ---------- */
+
+.icon:before {
+  content:"";
+  width:34%;
+  height:27%;
+  position: absolute;
+  top:0; right:0;
+  background-image: linear-gradient(45deg, #D6D6D6 -5%, #DBDBDB 20%, #ECECFB 60%, #DBDBDB 80%, #D6D6D6 105%);
+  border-top-right-radius:60px;
+  border-bottom-left-radius:6px;
+  border-left:2px solid rgba(204, 204, 204, 0.7);
+  border-bottom:2px solid rgba(204, 204, 204, 0.7);
+  transition:all 0.7s ease-in-out;
+  animation: coolEffect 5s ease-in 3s infinite alternate none;
+}
+
+/* ---------- Pautas ---------- */
+
+.icon:after {
+  content:"";
+  width:65%;
+  height:50px;
+  position: absolute;
+  top:48%; left:50%;
+  margin-left:-32.25%;
+  background-image: linear-gradient(#ccc 0%, #ccc 20%, #ECECFB 20%, #ECECFB 40%, #ccc 40%, #ccc 60%, #ECECFB 60%, #ECECFB 80%, #ccc 80%, #ccc 100%);
+  border-radius:2px;
+  opacity:0.7;
+}
+
+.author {
+  position: absolute;
+  left: 42%;
+  bottom: 6%;
+  color: #1abc9c;
+  font: 1.4em 'Raleway', sans-serif;
+  font-weight: 500;
+}
+
+@keyframes fadeIn {
+  0%,40% { opacity: 0; }
+  60, 80% { opacity: 0.4; }
+  100% { opacity: 1; }
+}
+
+@keyframes slideLeftBig {
+  0% {
+    transform: translateX(-600px);
+  }
+  60% {
+    transform: translateX(0) skew(-9deg);
+  }
+  78% {
+    transform: translateX(-70px);
+  }
+  92% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRightBig {
+  0% {
+    transform: translateX(600px) rotate(2deg);
+  }
+  52% {
+    transform: rotate(-4deg) skew(20deg);
+  }
+  90% {
+    transform: rotate(6deg) skew(-10deg);
+  }
+  100% {
+    transform: translateX(0) rotate(8deg);
+  }
+}
+
+@keyframes coolEffect {
+  0% {
+    width: 34%;
+    height: 27%;
+  }
+  50% {
+    width: 28%;
+    height: 20%;
+  }
+  100% {
+    width: 34%;
+    height: 27%;
+  }
+}
