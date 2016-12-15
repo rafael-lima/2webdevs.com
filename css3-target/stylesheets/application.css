@@ -1,0 +1,167 @@
+/* =========================================================================
+	=> GENERAL STYLES
+	========================================================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: url('../images/bg-noise-texture.png') #222;
+	font: 16px 'Raleway', sans-serif;
+	overflow-x: hidden;
+}
+
+::selection {
+	background: rgba(142,68,173,1.0);
+	color: #aaa;
+}
+
+::-webkit-scrollbar { width: 6px; }
+
+::-webkit-scrollbar-track {
+	border-radius: 10px;
+	background: #222
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgba(142,68,173,.9);
+}
+
+.main {
+	position: relative;
+	width: 100%;
+}
+
+/* =========================================================================
+	=> ANIMATION CLASSES
+	========================================================================== */
+
+.sliding {
+	animation: sliding 1.9s cubic-bezier(.10,0,.30,1);
+}
+
+.surfing-left {
+	animation: surfing-left 1.7s cubic-bezier(.30,.80,.12,.78);
+}
+
+.surfing-right {
+	animation: surfing-right 1.7s cubic-bezier(.30,.80,.12,.78);
+}
+
+/* =========================================================================
+	=> MASTHEAD HEADING
+	========================================================================== */
+
+.masthead {
+	margin-top: 2%;
+	color: #aaa;
+	text-align: center;
+	/*overflow: hidden;*/
+}
+
+.title {
+	margin: 0.5em 0;
+	font-size: 3.28em;
+	text-shadow: 1px 1px 0.6pc rgba(120,120,120,.6);
+}
+
+.subtitle {
+	font-size: 1.30em;
+	font-weight: 200;
+	text-shadow: 1.2px 1.2px 0.4pc rgba(140,140,140,.6);
+	letter-spacing: 0.4px;
+}
+
+.word-highlight {
+	color: rgba(142,68,173,1.0);
+	text-shadow: 1px 1px 0.5pc rgba(142,68,173,1.0);
+}
+
+/* =========================================================================
+	=> NAVIGATION CONTROLLER
+	========================================================================== */
+
+.nav-control {
+	position: fixed;
+	left: 50%;
+	bottom: 8%;
+	overflow: hidden;
+	width: 960px;
+	max-width: 960px;
+	padding: 8px 0;
+	margin-left: -480px;
+	border-radius: 4px;
+	background: rgba(110,110,110,.2);
+	box-shadow: 0px 0px 2pc 1px #222;
+}
+
+.nav-control-item {
+	text-decoration: none;
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	margin: 0 1.5%;
+	border-radius: 50%;
+	background: rgba(190,190,190,.2);
+	box-shadow:
+		0px 0px 3pc 1px #222,
+		inset 0 0 1pc 1px rgba(142,68,173,.4);
+	border: 4px solid rgba(142,68,173,1.0);
+	transition: all .6s cubic-bezier(.52,1,.6,2);
+}
+
+.nav-control-item:hover {
+	cursor: pointer;
+	box-shadow: 0 0 1pc 2px rgba(142,68,173,.6);
+	transform: scale(1.5);
+	transition: all .4s cubic-bezier(.32,0,.15,1);
+}
+
+.nav-control a {
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	margin: 14px 0 0 26px;
+	color: rgba(142,68,173,1.0);
+	text-decoration: none;
+	font-size: 2.0em;
+	font-weight: bolder;
+}
+
+/* =========================================================================
+	=> SECTIONS CONTAINERS * TODO *
+	========================================================================== */
+
+.section-container {
+	position: fixed;
+	top: 25%;
+	left: 50%;
+	width: 100%;
+	height: 290px;
+	margin-left: -50%;
+	padding: 10px 18%;
+	overflow: auto;
+	background: rgba(60,60,60,.2);
+	color: rgba(200,200,200,.7);
+	letter-spacing: .4px;
+	text-shadow: 1.2px 1.2px 0 rgba(30,30,30,.8);
+	opacity: 0;
+	transform: translate(-100%);
+	transition: all 1.8s cubic-bezier(.15, 0, .30, 1);
+}
+
+.section-container:nth-child(odd) {
+transform: translate(100%);
+}
+
+.section-container:target {
+	opacity: 1;
+	transform: translate(0%);
+	transition: all 1.2s cubic-bezier(.30,.70,.22,.78);
+}
+
+.section-container h2 {
+	color: rgba(142,68,173,.8);
+	text-shadow: 1px 1px 0.6pc rgba(120,120,120,.6);
+}
