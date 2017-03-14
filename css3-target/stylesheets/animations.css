@@ -42,3 +42,19 @@
 		transform: translateX(0);
 	}
 }
+
+/* =========================================================================
+	=> ANIMATION CLASSES
+	========================================================================== */
+
+.sliding {
+	animation: sliding 1.9s cubic-bezier(.10,0,.30,1);
+}
+
+.surfing-left {
+	animation: surfing-left 1.7s cubic-bezier(.30,.80,.12,.78);
+}
+
+.surfing-right {
+	animation: surfing-right 1.7s cubic-bezier(.30,.80,.12,.78);
+}
