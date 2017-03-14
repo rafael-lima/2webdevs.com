@@ -28,11 +28,6 @@ body {
 	background: rgba(142,68,173,.9);
 }
 
-.main {
-	position: relative;
-	width: 100%;
-}
-
 /* =========================================================================
 	=> ANIMATION CLASSES
 	========================================================================== */
@@ -84,7 +79,7 @@ body {
 .nav-control {
 	position: fixed;
 	left: 50%;
-	bottom: 8%;
+	bottom: 5%;
 	overflow: hidden;
 	width: 960px;
 	max-width: 960px;
